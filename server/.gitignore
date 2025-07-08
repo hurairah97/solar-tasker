@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+/build
+/backup
+.env
+/server.zip
+/*.zip
+/logs
+*.log
+.env
+/.vscode
+/Old Deployments
