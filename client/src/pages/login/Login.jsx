@@ -35,7 +35,7 @@ const Login = ({ setIsAuthenticated }) => {
 
     const response = await dispatch(login(dataToSend)); // for login
 
-    console.log(response);
+    // console.log(response);
 
     if (response.meta.requestStatus === "fulfilled") {
       const token = response.payload.token;
@@ -103,7 +103,7 @@ const Login = ({ setIsAuthenticated }) => {
               fontFamily: "Roboto, sans-serif",
               fontWeight: "bold",
               color: "#1976d2",
-              fontSize: "36px"
+              fontSize: "36px",
             }}
           >
             Welcome Back!

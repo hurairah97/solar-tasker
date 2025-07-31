@@ -10,7 +10,9 @@ export const login = createAsyncThunk(
       const response = await userRequest.post("login", data);
       return response.data;
     } catch (error) {
-      return rejectWithValue("Error occurred while logging user");
+      // Extract error message from the backend response
+      const errorMessage = error.response?.data || "Something went wrong";
+      return rejectWithValue(errorMessage);
     }
   }
 );
